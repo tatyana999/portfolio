@@ -98,6 +98,7 @@
     position: relative;
     right: 32%;
   }
+
   .flip-container {
     width: 300px;
     height: 350px;
@@ -117,6 +118,14 @@
   }
   .radio1:not(checked):after {
     left: 7.5%;
+  }
+  .icons{
+    margin-top: 5px;
+  }
+  .auth__down-item:nth-child(3){
+    .auth__down-text{
+      margin-top: 0;
+    }
   }
   //about
   .header {
@@ -152,7 +161,6 @@
     color: #474b57;
     position: absolute;
     // margin-right: 0;
-    text-transform: uppercase;
     top: 10%;
     left: 15%;
     z-index: 2;
@@ -277,13 +285,9 @@
     height: 150px;
     .footer__top {
       display: flex;
-      flex: 1 100%;
-      //justify-content: space-between;
-      //align-items: flex-end;
+      //flex: 1 100%;
       flex-flow: row wrap;
 
-      .footer__top:nth-child(1) {
-      }
       .footer__top-block{
         flex-wrap: wrap;
         display: flex;
@@ -291,17 +295,40 @@
 
       .footer__top-block:nth-child(1) {
         align-self: flex-start;
-        flex: 500px;
+        flex: 750px;
+      }
+      .footer__top-block:nth-child(2){
+        align-self: flex-start;
+        margin: 0;
+        transform: rotate(90deg);
+        position:absolute;
+        top:- 70px;
+        flex:300px 0;
+          .border{
+            display:none;
+            //position: ;
+            height: 300px;
+          svg{
+            width: 300px;
+          }
+
+          }
+
+
       }
 
     }
     .footer__top-inf {
-      margin: 0;
+text-align: center;
+      margin-top:5px;
+
     }
     .footer__top-list {
-display: flex;
-      .footer__top-item {
+        display: flex;
 
+
+      .footer__top-item {
+        display: flex;
         .footer-top-link {
 
         }
@@ -334,21 +361,12 @@ display: flex;
         }
       }
     }
-    .border {
+    .border1 {
       display: none;
     }
     .footer__block-list {
-      margin-top: 10px;
-      position: relative;
-      width: 90%;
-      height: 100%;
-      display: block;
+      text-align: right;
       .footer__block-item {
-        display: block;
-        width: 80%;
-        float: left;
-        color: #fff;
-        font-size: 12px;
       }
     }
   }
@@ -358,10 +376,10 @@ display: flex;
   }
   .footer__top-list {
     width: 80%;
-    margin: 0;
+    margin-left: 10px;
   }
   .footer__top-socials {
-    margin-left: 0;
+    margin-left: 10px;
   }
 
   //myworks
@@ -502,6 +520,9 @@ display: inline-block;
   }
   .works__cont-view{
     width: 50%;
+  }
+  .contacts{
+    top: 68%;
   }
 }
 

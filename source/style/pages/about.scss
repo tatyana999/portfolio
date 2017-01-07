@@ -90,12 +90,12 @@
 }
 .auth__stars{
   position:absolute;
-  top:50%;
+  top:45%;
   margin: 0 auto;
   overflow: hidden;
   transform:translateY(-50%);
-  width:250px;
-  height: 250px;
+  width:370px;
+  height: 300px;
   background: top no-repeat;
   background-size: contain;
   opacity: 0.2;
@@ -315,7 +315,7 @@ color:#000;
     //width: 100%;
     height: 80%;
     background: #3d3f47;
-flex:1;
+    flex:1;
     //margin: 0;
 
   }
@@ -327,6 +327,13 @@ flex:1;
   //height: 100%;
 
   }
+  .footer__top-block:nth-child(2){
+   flex: 0 3px;
+    margin-right: 20px;
+  }
+.svg__border{
+  //width: 3px;
+}
   .footer__top-inf {
     margin-left: 10px;
     color: #fff;
@@ -378,11 +385,12 @@ flex:1;
     }
   }
   .svg__border{
-    width: 5%;
+    //width: 5%;
     //position: relative;
    // display: block;
-    float: left;
+   // float: left;
     margin: 0;
+    display: flex;
   }
   .footer__block-list{
     margin-top: 10px;

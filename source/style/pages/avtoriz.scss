@@ -29,21 +29,21 @@
 }
 .avtorizwindow__input{
     width: 80%;
-    height: 30px;
-    margin: 10px auto;
+    height: 40px;
+    margin: 20px auto;
 }
 
 .avtorizwindow-icon{
-    width:30px;
-    height: 30px;
+    width:40px;
+    height: 40px;
     background: #eee;
     display: block;
     float: left;
 
     svg{
-        margin-top:10px;
-        width: 10px;
-        height: 10px;
+        margin-top:12px;
+        width: 15px;
+        height: 15px;
         fill:#000;
         opacity: 0.7;
         &:hover{
@@ -54,9 +54,8 @@
 }
 .login{
     border: none;
-    width:80%;
-    height: 20px;
-    font-size: 12px;
+    width:258px;
+    height: 30px;
     padding: 6px 0 4px 10px;
     background: #fff;
     outline: none;
@@ -66,15 +65,15 @@
 .avtorizwindow__check{
     margin-bottom: 5px;
     .check{
-        width: 14px;
-        height: 14px;
+        width: 16px;
+        height: 16px;
         margin: 3px 3px 0 0;
     }
     .check:not(checked):before {
         content: '';
         display: block;
-        width: 14px;
-        height: 14px;
+        width: 16px;
+        height: 16px;
         background: white;
         border-radius:0;
         text-align: center;
@@ -88,13 +87,13 @@
     .check:checked:after {
         content: '';
         position: absolute;
-        width: 10px;
-        height: 10px;
+        width: 11px;
+        height: 11px;
         border-radius:0;
         background: url(/assets/img/check.svg)  center no-repeat;
         background-size:contain;
         transition: all .2s;
-        margin: 2px;
+        margin: 2px 3px;
 
     }
 }
@@ -122,7 +121,7 @@
     content: '';
     position: absolute;
     top: 10%;
-    left: 4%;
+    left: 3%;
     width: 14px;
     height: 14px;
     border: 1px solid ;
@@ -133,7 +132,7 @@
 .radio1:not(checked):after{
     content: '';
     position: absolute;
-    left: 8%;
+    left: 8px;
     margin-top:3px;
     width: 8px;
     height: 8px;
@@ -153,7 +152,7 @@
 .avtorizwindow__quiestion{
     color: #fff;
     font-size: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .auth__down-list {
     position:absolute;
@@ -171,11 +170,13 @@
         &:hover {
             background: #083c96;
         }
+        .auth__down-text{
+            margin-top: 7px;
+        }
     }
 }
 .auth__down-link{
     color:#fff;
-    font-size: 12px;
-    margin-top: 15px;
+    margin-top: 20px;
 
 }

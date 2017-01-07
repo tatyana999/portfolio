@@ -61,8 +61,6 @@ $(function($) {
         }
     });
 
-    // Example of infinite knob, iPod click wheel
-
 });
 
 //flip

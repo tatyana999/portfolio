@@ -1,0 +1,88 @@
+extends ../_template
+
+block variables
+  - var title = 'First page'
+
+block content
+  .welcom
+      .starsbackgr
+        canvas( id="pixie")
+        div( id="mountains")
+          .main-content
+             .avtoriz
+               .avtoriz__buttom
+                 a.avtoriz__link(href='#' id='avtoriz')
+                  .avtoriz__text  Авторизоваться
+             .wrap
+                 .flip-container
+                     .flipper(id="card")
+                        .front
+                           .auth
+                             .auth__top
+                               .auth__avatar
+                                 .auth__avatar-img(style="background-image:url('/assets/img/foto_1.jpg');")
+                                  img.avatar-pic(src="/assets/img/foto_1.jpg" alt="")
+                               .auth__name Серова Татьянa
+                               .auth__text Личный сайт веб разработчика
+                               .icons
+                                 ul.icons__list
+                                   li.icons__item
+                                     a(href='#')
+                                      svg(role="img")
+                                       use( xlink:href="/assets/sprite/sprite.svg#vk")
+                                   li.icons__item
+                                     a(href='#')
+                                       svg(role="img" )
+                                        use( xlink:href="/assets/sprite/sprite.svg#github")
+                                   li.icons__item
+                                     a(href='#')
+                                       svg(role="img")
+                                        use( xlink:href="/assets/sprite/sprite.svg#in")
+                             .auth__down
+                               ul.auth__down-list
+                                 li.auth__down-item
+                                   .auth__down-text
+                                     a.auth__down-link(href='/myworks.html') Мои работы
+                                 li.auth__down-item
+                                   .auth__down-text
+                                     a.auth__down-link(href="/about.html") Обо мне
+                                 li.auth__down-item
+                                   .auth__down-text
+                                     a.auth__down-link(href='/blog.html') Блог
+                        .back
+                            .avtorizwindow
+                                .avtorizwindow__title Авторизуйтесь
+                                form(action="#" method="POST" class="avform")
+                                    .avtorizwindow__input
+                                        .avtorizwindow-icon
+                                            svg(role="img")
+                                                use( xlink:href="/assets/sprite/sprite.svg#login")
+                                        input(type="text" class="login" placeholder="Логин")
+                                    .avtorizwindow__input
+                                        .avtorizwindow-icon
+                                            svg(role="img")
+                                                use( xlink:href="/assets/sprite/sprite.svg#password")
+                                        input(type="text" class="login" placeholder="Пароль")
+                                    .avtorizwindow__check
+                                        input(type="checkbox" id="checkbox" class="check")
+                                        label(for="checkbox" class="label-text") Я человек
+                                    .avtorizwindow__quiestion Вы точно не робот?
+                                    .avtorizwindow__radio
+                                        .radio__block
+                                           input(type="radio" name="radio" class ="radio1" id="radio")
+                                           label(for="radio" class="label-text") Да
+                                        .radio__block
+                                           input(type="radio"  name="radio" class ="radio1" id="radio1")
+                                           label(for="radio1"  class="label-text") Не уверен
+                                ul.auth__down-list
+                                    li.auth__down-item
+                                        .auth__down-text
+                                            a.auth__down-link(href='/welcom.html') На главную
+                                    li.auth__down-item
+                                        .auth__down-text
+                                            a.auth__down-link(href="/about.html") Войти
+             .auth__footer
+                 .auth__footer-name &copy; Серова Татьяна
+                 .auth__footer-text создано в Loftschool
+                 .auth__footer-year 2016
+

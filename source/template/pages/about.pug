@@ -1,0 +1,198 @@
+extends ../_template
+
+block variables
+  - var title = 'About page'
+
+block content
+     .p_prldr(id="p_prldr")
+         .contpre
+            svg( x="0px" y="0px" width="90px" height="90px" viewBox="0 0 53 64" enable-background="new 0 0 52.586 63.73" xml:space="preserve" class="svg_anm")
+                circle(fill="none" stroke="#FFFFFF" stroke-width="2.5864" stroke-miterlimit="10" cx="26.293" cy="37.438" r="25" class="circle")
+                circle(fill="#FFFFFF" stroke="#FFFFFF" cx="26.293" cy="35.5" r="4.5" class="point")
+            .persent 0%
+     .container
+         .wrapper
+             .header
+                 .starsbackgr
+                        canvas( id="pixie")
+                        div( id="mountains")
+                           .header__top
+                                 .header__top-left
+                                    .header__top-icons
+                                       ul.header__top-list
+                                        li.header__top-item
+                                          a.header__top-link(href='#')
+                                            svg(role="img")
+                                              use(xlink:href="/assets/sprite/sprite.svg#vk")
+                                        li.header__top-item
+                                          a.header__top-link(href='#')
+                                            svg(role="img")
+                                              use(xlink:href="/assets/sprite/sprite.svg#github")
+                                        li.header__top-item
+                                          a.header__top-link(href='#')
+                                            svg(role="img")
+                                              use(xlink:href = "/assets/sprite/sprite.svg#in")
+                                 .header__top-right
+                           .wrap
+                                  .auth
+                                     .auth__stars(style="background-image:url('/assets/img/stars1.svg');")
+                                     .auth__avatar
+                                       .auth__avatar-img(style="background-image:url('/assets/img/foto_1.jpg');")
+                                       img.avatar-pic(src="/assets/img/foto_1.jpg" alt="")
+                                     .auth__name Серова Татьянa
+                                     .auth__text Личный сайт веб разработчика
+                           .header__down
+                                  a(href="#" class="down-arrow")
+                                     .arrow-scroll(style="background-image:url('/assets/img/arrow_down.svg')")
+                                  svg(viewbox="0 0 1000 120" preserveAspectRatio='none' class="triangle")
+                                      polygon(points="0,0 0,120 500.8,120 500.8,85" class="left")
+                                      polygon(points="1000,0 1000,120 500,120 500,85" class="right")
+             .aboutmeinf
+                      .about__left
+                            .about__left-blockname
+                              .about__stars(style="background-image:url('/assets/img/stars2.svg')")
+                              h1.about__left-title обо мне
+                            .about__information
+                              .about__img(style="background-image:url('/assets/img/foto_1.jpg');")
+                                img.avatar-pic(src="/assets/img/foto_1.jpg" alt="")
+                              .about__text
+                                .about__title  кто я
+                                hr
+                                p Я занимаюсь разработкой современных сайтов и приложений.Мне нравится делать интересные и современные проекты
+                                p Этот сайт был сделан в рамках обучения в Школе онлайн образования Loftschool
+                      .about__right
+                            .about__right-title чем я могу быть вам полезна
+                            hr
+                            .about__right-text Больше всего меня привлекает frontend-разработка,но также могe решать несложные задачи на backend.Но давайте по порядку
+                            .about__skills
+                               .about__skills-title Frontend
+                               ul.skills__list
+                                  li.skills__item
+                                    input(type="text" value="50"  class="knob"  data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                    .input-block
+                                       .input-text HTML5
+                                  li.skills__item
+                                    input(type="text" value="30" class="knob" data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                    .input-block
+                                       .input-text CSS3
+                                  li.skills__item
+                                    input(type="text" value="60" class="knob" data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                    .input-block
+                                       .input-text JavaScript& JQuery
+                            .about__skills
+                               .about__skills-title Backend
+                               ul.skills__list
+                                  li.skills__item
+                                    input(type="text" value="20" class="knob" data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                    .input-block
+                                       .input-text PHP
+                                  li.skills__item
+                                    input(type="text" value="10" class="knob" data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                    .input-block
+                                        .input-text MySQL
+                                  li.skills__item
+                                    input(type="text" value="30" class="knob" data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                    .input-block
+                                        .input-text Node.js &npm
+                                  li.skills__item
+                                    input(type="text" value="10" class="knob" data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                    .input-block
+                                        .input-text Mongo.db
+                            .about__skills
+                               .about__skills-title WorkFlow
+                               ul.skills__list
+                                  li.skills__item
+                                     input(type="text" value="70" class="knob" data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                     .input-block
+                                         .input-text Git
+                                  li.skills__item
+                                     input(type="text" value="60" class="knob" data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                     .input-block
+                                         .input-text Gulp
+                                  li.skills__item
+                                     input(type="text" value="65" class="knob" data-displayInput="false" data-width="90" data-fgColor="#083c96")
+                                     .input-block
+                                         .input-text Bower
+             .map(id='map')
+             .contacts
+                     h2.contacts__title контакты
+                     hr
+                     ul.contacts__list
+                         li.contacts__item
+                                   a.contacts__link(href="#") girasol9848
+                                     svg(role="img")
+                                       use( xlink:href="/assets/sprite/sprite.svg#skype")
+                         li.contacts__item
+                                   a.contacts__link(href="#") +72222222222
+                                     svg(role="img" )
+                                       use( xlink:href="/assets/sprite/sprite.svg#phone_n")
+                         li.contacts__item
+                                   a.contacts__link(href="#") s9t711@yandex.ru
+                                     svg(role="img")
+                                       use( xlink:href="/assets/sprite/sprite.svg#envelope_n")
+                         li.contacts__item
+                                   a.contacts__link(href="#") Наро-Фоминск
+                                      svg(role="img")
+                                         use( xlink:href="/assets/sprite/sprite.svg#map_n")
+             .footer
+                            .footer__top
+                                .footer__top-block
+                                  .footer__top-inf  Этот сайт сделан в рамках обучения в школе онлайн образования Loftschool
+                                .footer__top-block
+                                   .svg__border
+                                        svg(width="5" height="100" class='border')
+                                          path(stroke="grey" stroke-width="2" d="M 1,20 L 1,80")
+                                   ul.footer__top-list
+                                      li.footer__top-item
+                                        a.footer-top-link(href='#')  Мои работы
+                                      li.footer__top-item
+                                        a.footer-top-link(href='#')  Обо мне
+                                      li.footer__top-item
+                                        a.footer-top-link(href='#')  Блог
+                                      li.footer__top-item
+                                        a.footer-top-link(href='#')  Авторизация
+                                   .footer__top-socials
+                                    ul.socials__list
+                                      li.socials__item
+                                        a.socials__link(href='#')
+                                          svg(role="img")
+                                            use( xlink:href="/assets/sprite/sprite.svg#vk")
+                                      li.socials__item
+                                        a.socials__link(href='#')
+                                          svg(role="img")
+                                            use( xlink:href="/assets/sprite/sprite.svg#github")
+                                      li.socials__item
+                                        a.socials__link(href='#')
+                                          svg(role="img")
+                                            use( xlink:href="/assets/sprite/sprite.svg#in")
+                                .footer__top-block
+                                   .svg__border
+                                      svg(width="5" height="100" class='border')
+                                       path(stroke="grey" stroke-width="2" d="M 1,20 L 1,80")
+                                   ul.footer__block-list
+                                        li.footer__block-item  girasol9848
+                                        li.footer__block-item +72222222222
+                                        li.footer__block-item s9t711@yandex.ru
+                                        li.footer__block-item Наро-Фоминск
+                            .footer__down
+                                .footer__down-auth
+                                  .footer__down-name &copy; Серова Татьяна
+                                  .footer__down-text создано в Loftschool
+                                  .footer__down-year 2016
+     .button_container(id="toggle")
+             span(class="top")
+             span(class="middle")
+             span(class="bottom")
+     .overlay(id="overlay")
+         nav(class="overlay-menu")
+             ul.overlay__list
+                 li.overlay__item
+                       a.overlay__link(href="/avtoriz.html") Авторизация
+                 li.overlay__item
+                       a.overlay__link(href="/about.html") Обо мне
+                 li.overlay__item
+                       a.overlay__link(href="/blog.html") Блог
+                 li.overlay__item
+                       a.overlay__link(href="/myworks.html") Мои работы
+
+

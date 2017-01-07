@@ -1,0 +1,167 @@
+extends ../_template
+
+block variables
+  - var title = 'My works'
+
+block content
+  .container
+     .wrapper
+         .header
+             .starsbackgr
+                 canvas( id="pixie")
+                 div( id="mountains")
+                   .header__top
+                     .header__top-left
+                       .header__top-icons
+                         ul.header__top-list
+                          li.header__top-item
+                            a.header__top-link(href='#')
+                              svg(role="img")
+                                use( xlink:href="/assets/sprite/sprite.svg#vk")
+                          li.header__top-item
+                            a.header__top-link(href='#')
+                              svg(role="img")
+                                use( xlink:href="/assets/sprite/sprite.svg#github")
+                          li.header__top-item
+                            a.header__top-link(href='#')
+                              svg(role="img")
+                                use( xlink:href="/assets/sprite/sprite.svg#in")
+                     .header__top-right
+                   .wrap_myworks
+                     .auth
+                       .auth__stars(style="background-image:url('/assets/img/stars1.svg');")
+                       .auth__avatar
+                         .auth__avatar-img(style="background-image:url('/assets/img/foto_1.jpg');")
+                         img.avatar-pic(src="/assets/img/foto_1.jpg" alt="")
+                       .auth__name Серова Татьяна
+                       .auth__text Личный сайт вебразработчика
+                   .header__down_myworks
+                    a(href="#" class="down-arrow")
+                           .arrow-scroll(style="background-image:url('/assets/img/arrow_down.svg')")
+                    svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 170" preserveAspectRatio='none' class="triangle")
+                         polygon(points="0,0 0,170 500.8,170 500.8,70" class="left__myworks")
+                         polygon(points="1000,0 1000,170 500,170 500,70" class="right__myworks")
+                    .header__stars(style="background-image:url('/assets/img/stars2.svg');")
+                    .header__down-title мои работы
+         section(class="section works")
+           .works__cont
+               .works__left
+                   .works-slider__cont
+                       .works-slider__cont-wraper
+                           .works-slider__display
+                               img(src="" alt="" class="works-slider__display-pic")
+                           .works-slider__item-about
+                               .works__subtitle
+                                   .subtitle
+                               .works__cont-desc
+                               .works__cont-btn
+                                  a(href='#' class='works__cont-view')
+                                      svg(role="img")
+                                          use(xlink:href = "/assets/sprite/sprite.svg#link")
+                                      .works__cont-view-title   Посмотреть сайт
+               .works__right
+                   .works-slider
+                       .works-slider__controls
+                           a(href='#' class='works-slider__control-btn works-slider__control-btn_left')
+                             ul(class='works-slider__control-list')
+                                 li(data-full='/assets/img/1.png' data-title='Предполагаемый проект' data-skills='html5,css,js' data-link='#' class='works-slider__control-item')
+                                    img(src='/assets/img/1.png' class='works-slider__control-img')
+                                 li(data-full='/assets/img/2.png' data-title='Портфолио' data-skills='html5,css' data-link='#' class='works-slider__control-item')
+                                     img(src='/assets/img/2.png' class='works-slider__control-img')
+                                 li(data-full='/assets/img/3.png' data-title='Лендинг' data-skills='html5,css,js' data-link='#' class='works-slider__control-item')
+                                     img(src='/assets/img/3.png' class='works-slider__control-img')
+                                 li(data-full='/assets/img/4.png' data-title='Сайт-портфолио' data-skills='html5,css,js' data-link='#' class='works-slider__control-item')
+                                     img(src='/assets/img/4.png' class='works-slider__control-img')
+                           a(href="#" class='works-slider__control-btn works-slider__control-btn_right')
+         section.aboutme
+            .blogwrap
+                .aboutme__title
+                   h2  что обо мне
+                   h2  говорят
+                   .aboutme__stars(style="background-image:url('/assets/img/stars3.svg');")
+                .aboutme__opinions
+                    .opinions__left
+                      .opinions__img(style="background-image:url('/assets/img/kovalchuk.jpg');")
+                      img.avatar-pic(src="/assets/img/kovalchuk.jpg" alt="")
+                      .opinions__text Здесь должен быть отзыв обо мне, но пока его нет.
+                      .opinions__auth Дмитрий Ковальчук
+                      .opinions__auth-text -основатель Loftschool
+                    .opinions__right
+                      .opinions__img(style="background-image:url('/assets/img/zar.jpg');")
+                       img.avatar-pic(src="/assets/img/zar.jpg" alt="")
+                      .opinions__text Здесь должен быть отзыв обо мне, но пока его нет.
+                      .opinions__auth Зар Захаров
+                      .opinions__auth-text -главный преподаватель
+                .aboutme__form
+                   .aboutme__conect
+                       .aboutme__conect-title связаться со мной
+                       hr
+                       form(action="#" method="POST" class="form")
+                          input(type="text" class="name" placeholder="Ваше имя")
+                          input(type="text" class="name" placeholder="Ваш email")
+                          textarea(name="#" class="text" placeholder="Ваше сообщение")
+                          .aboutme__conect-button
+                             input(type="submit" class='aboutme__conect-left' value="Отправить")
+                             input(type="submit"  class='aboutme__conect-right' value="Очистить")
+                a(href="#" class="up-arrow")
+                   .arrow__up-scroll(style="background-image:url('/assets/img/arrow_down.svg')")
+            .footer
+                   .footer__top
+                      .footer__top-block
+                         .footer__top-inf  Этот сайт сделан в рамках обучения в школе онлайн образования Loftschool
+                      .footer__top-block
+                         .svg__border
+                            svg(width="5" height="100" class='border')
+                              path(stroke="grey" stroke-width="2" d="M 1,20 L 1,80")
+                         ul.footer__top-list
+                           li.footer__top-item
+                             a.footer-top-link(href='#')  Мои работы
+                           li.footer__top-item
+                             a.footer-top-link(href='#')  Обо мне
+                           li.footer__top-item
+                             a.footer-top-link(href='#')  Блог
+                           li.footer__top-item
+                             a.footer-top-link(href='#')  Авторизация
+                         .footer__top-socials
+                            ul.socials__list
+                              li.socials__item
+                                 a.socials__link(href='#')
+                                   svg(role="img")
+                                       use( xlink:href="/assets/sprite/sprite.svg#vk")
+                              li.socials__item
+                                 a.socials__link(href='#')
+                                   svg(role="img")
+                                      use( xlink:href="/assets/sprite/sprite.svg#github")
+                              li.socials__item
+                                 a.socials__link(href='#')
+                                   svg(role="img")
+                                      use( xlink:href="/assets/sprite/sprite.svg#in")
+                      .footer__top-block
+                        .svg__border
+                           svg(width="5" height="100" class='border')
+                            path(stroke="grey" stroke-width="2" d="M 1,20 L 1,80")
+                        ul.footer__block-list
+                            li.footer__block-item  girasol9848
+                            li.footer__block-item +72222222222
+                            li.footer__block-item s9t711@yandex.ru
+                            li.footer__block-item Наро-Фоминск
+                   .footer__down
+                      .footer__down-auth
+                         .footer__down-name &copy; Серова Татьяна
+                         .footer__down-text создано в Loftschool
+                         .footer__down-year 2016
+  .button_container(id="toggle")
+       span(class="top")
+       span(class="middle")
+       span(class="bottom")
+  .overlay(id="overlay")
+     nav(class="overlay-menu")
+        ul.overlay__list
+            li.overlay__item
+               a.overlay__link(href="/avtoriz.html") Авторизация
+            li.overlay__item
+               a.overlay__link(href="/about.html") Обо мне
+            li.overlay__item
+               a.overlay__link(href="/blog.html") Блог
+            li.overlay__item
+               a.overlay__link(href="/myworks.html") Мои работы

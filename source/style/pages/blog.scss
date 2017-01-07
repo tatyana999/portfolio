@@ -1,0 +1,153 @@
+.auth__blog{
+  font-size: 63px;
+  margin-top: 15px;
+  color:#ffffff;
+  text-align: center;
+  width: 100%;
+  display:inline-block;
+  float:right;
+  font-family: 'Sansus-Regular';
+}
+.blog{
+  @include clearfix();
+background: #faf8f0;
+  margin: 0 auto;
+}
+
+.blogwrap{
+  @include clearfix();
+  width: 960px;
+  margin: 0 auto;
+  max-width: 940px;
+  min-height: 100%;
+  //margin-bottom: -120px;
+}
+.blogwrap:after {
+  content: '';
+  display: block;
+  height: 120px; // Равно высоте футера
+}
+
+//сайдбар
+.sidebar{
+  float: left;
+  width: 100%;
+  //min-height: 100vh;
+  //min-height: 1px;
+
+}
+.nav-menu{
+  top:10px;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  margin-right: 20px;
+}
+.nav-menu.fixed {
+  width: 235px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.menu {
+  right: 0;
+  list-style-type: none;
+  text-align: right;
+  overflow: hidden;
+}
+.menu__item {
+  padding: 5px 5px;
+  font-variant: small-caps;
+  color:  #474b57;
+  cursor: pointer;
+  //font-family: 'Sansus-Regular';
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu__item:hover {
+  color: #083C96;
+}
+
+.menu__item--active {
+  font-size: 16px;
+  color: #083C96;
+  border-right: 3px  solid;
+}
+
+.parent:before,
+.parent:after {
+  content: "";
+  display: table;
+}
+.parent:after {
+  clear: both;
+}
+
+//блог,основ часть
+.mainarticles {
+  @include clearfix();
+  float:right;
+  width:73%;
+}
+
+.news{
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 12px;
+  margin-bottom: 20px;
+  vertical-align:top;
+  border-bottom: 2px solid #e7e5e3;
+}
+.news:last-child{
+  border-bottom:none;
+}
+.main__blog-title{
+font-family: 'Sansus-Regular';
+  font-size: 35px;
+  color: #474b57;
+  margin-bottom: 10px;
+}
+.main__blog-date{
+ color: #083c96;
+  margin-bottom: 10px;
+}
+.main__blog-text {
+  color: #474b57;
+  margin-bottom: 30px;
+}
+.triangle .left__blog{
+  fill:#faf8f0;
+}
+.triangle .right__blog{
+  fill:#faf8f0;
+}
+//semicircle
+.acco{
+  height: 100%;
+  position: relative;
+  width: 25%;
+  float: left;
+}
+.semicircle{
+  width: 35px;
+  height: 70px;
+position: absolute;
+  top:25%;
+  right: -15%;
+ display: none;
+  //right: 0;
+}
+.semicircle-link{
+  .link-figure{
+    width: 30px;
+    height: 70px;
+    background: #0548be;
+    border-radius:0 50px 50px 0;
+  }
+}

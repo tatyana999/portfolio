@@ -1,0 +1,131 @@
+extends ../_template
+
+block variables
+  - var title = 'Blog'
+
+block content
+  .container
+      .wrapper
+        .header
+            .starsbackgr
+                canvas( id="pixie")
+                div( id="mountains")
+                  .header__top
+                    .header__top-left
+                      .header__top-icons
+                        ul.header__top-list
+                         li.header__top-item
+                           a.header__top-link(href='#')
+                             svg(role="img")
+                               use( xlink:href="/assets/sprite/sprite.svg#vk")
+                         li.header__top-item
+                           a.header__top-link(href='#')
+                             svg(role="img")
+                               use( xlink:href="/assets/sprite/sprite.svg#github")
+                         li.header__top-item
+                           a.header__top-link(href='#')
+                             svg(role="img")
+                               use( xlink:href="/assets/sprite/sprite.svg#in")
+                    .header__top-right
+                  .wrap
+                    .auth
+                      .auth__stars(style="background-image:url('/assets/img/stars1.svg');")
+                      .auth__avatar
+                        .auth__avatar-img(style="background-image:url('/assets/img/foto_1.jpg');")
+                        img.avatar-pic(src="/assets/img/foto_1.jpg" alt="")
+                      .auth__blog БЛОГ
+                      .auth__text Статьи, которые не я написала
+                  .header__down
+                     svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 120" preserveAspectRatio='none' class="triangle")
+                       polygon(points="0,0 0,120 500.8,120 500.8,85" class="left__blog")
+                       polygon(points="1000,0 1000,120 500,120 500,85" class="right__blog")
+        section(class="blog parent")
+           .blogwrap
+                  .acco
+                      aside.sidebar
+                              div(class="nav-menu")
+                                  .semicircle
+                                      a.semicircle-link
+                                           .link-figure
+                                  ul.menu
+                                      li(class="menu__item menu__item--active") Приемы верстки веб-страниц
+                                      li.menu__item Упрощаем разработку CSS при помощи Sass
+                                      li.menu__item Начало работы с Pug
+                                      li.menu__item  Grunt vs Gulp сравнение систем сборки для front-end разработчика
+                  main.mainarticles
+                     article.news
+                          h2.main__blog-title Приемы верстки веб-страниц
+                          .main__blog-date  16.09.2016
+                          .main__blog-text  Верстка веб-страниц - не просто знание приемов и хитростей создания различных эффектов. Это умение предугадывать результат действий с элементами веб-страниц и понимание особенностей различных браузеров, которые могут по-разному показывать сайт. Работа верстальщика сродни работе шеф-повара, который точно знает, какие ингредиенты и в каком количестве нужно добавить, чтобы улучшить вкус конечного блюда. Вооружившись простыми, но действенными рецептами верстки, которые даются в этой книге, вы сможете создавать впечатляющие сайты.
+                     article.news
+                          h2.main__blog-title Упрощаем разработку CSS при помощи Sass
+                          .main__blog-date  26.09.2016
+                          .main__blog-text  Sass – это надежное, конфигурируемое и функциональное решение для разработки CSS. Вместо устаревших статических правил CSS в нем используется принцип динамической генерации структур. Если вы хотите придерживаться своего привычного стиля программирования и иметь доступ к структурам языка программирования, то Sass является наилучшим выбором.
+                     article.news
+                          h2.main__blog-title Начало работы с Pug
+                          .main__blog-date  11.10.2016
+                          .main__blog-text  Jade — это препроцессор HTML, а также шаблонизатор, написанный на JS для Node.js. Если говорить более понятным и простым языком, то можно сказать, что Jade — незаменимый инструмент при верстке сайтов. Почему незаменимый? Да потому, что он сэкономит Вам кучу времени, не говоря уж про удобство написания кода
+                     article.news
+                          h2.main__blog-title Grunt vs Gulp сравнение систем сборки для front-end разработчика
+                          .main__blog-date  12.11.2016
+                          .main__blog-text  Никто не любит делать скучные и повторяющиеся задачи, но компьютер может выполнять их за нас.Когда дело доходит до автоматизации сборки front-end проекта, есть два основных игрока: Grunt и Gulp.Но какой из них выбрать? Какие между ними различия? Какой из них лучше?Давайте рассмотрим основные различия между Grunt и Gulp.Синтаксис Gulp более краток, чем Grunt. Самое замечательное, что Gulp потоковая система сборки. Для описания задач в Gulp требуется писать гораздо меньше кода.Gulp не требует создания временных файлов между процессами. Файл, после выполнения текущего процесса, сразу передается следующему процесса, не тратя время на сохранение файла. Gulp использует Orchestrator, который помогает запускать процессы максимально параллельно. Это значит, что Gulp пытается выполнить все задачи одновременно. Теоретически,это позволяет Gulp выполнять задачи быстрее. Никто не любит делать скучные и повторяющиеся задачи, но компьютер может выполнять их за нас.Когда дело доходит до автоматизации сборки front-end проекта, есть два основных игрока: Grunt и Gulp.Но какой из них выбрать? Какие между ними различия? Какой из них лучше?Д
+           .footer
+                  .footer__top
+                       .footer__top-block
+                           .footer__top-inf  Этот сайт сделан в рамках обучения в школе онлайн образования Loftschool
+                       .footer__top-block
+                           .svg__border
+                               svg(width="5" height="100" class='border' )
+                                path(stroke="grey" stroke-width="2" d="M 1,20 L 1,80")
+                           ul.footer__top-list
+                              li.footer__top-item
+                                a.footer-top-link(href='#')  Мои работы
+                              li.footer__top-item
+                                a.footer-top-link(href='#')  Обо мне
+                              li.footer__top-item
+                                a.footer-top-link(href='#')  Блог
+                              li.footer__top-item
+                               a.footer-top-link(href='#')  Авторизация
+                           .footer__top-socials
+                              ul.socials__list
+                                li.socials__item
+                                  a.socials__link(href='#')
+                                   svg(role="img")
+                                     use( xlink:href="/assets/sprite/sprite.svg#vk")
+                                li.socials__item
+                                  a.socials__link(href='#')
+                                   svg(role="img")
+                                     use( xlink:href="/assets/sprite/sprite.svg#github")
+                                li.socials__item
+                                  a.socials__link(href='#')
+                                   svg(role="img")
+                                     use( xlink:href="/assets/sprite/sprite.svg#in")
+                       .footer__top-block
+                           .svg__border
+                             svg(width="5" height="100" class='border')
+                               path(stroke="grey" stroke-width="2" d="M 1,20 L 1,80")
+                           ul.footer__block-list
+                             li.footer__block-item  girasol9848
+                             li.footer__block-item +72222222222
+                             li.footer__block-item s9t711@yandex.ru
+                             li.footer__block-item Наро-Фоминск
+                  .footer__down
+                       .footer__down-auth
+                         .footer__down-name &copy; Серова Татьяна
+                         .footer__down-text создано в Loftschool
+                         .footer__down-year 2016
+  .button_container(id="toggle")
+         span(class="top")
+         span(class="middle")
+         span(class="bottom")
+  .overlay(id="overlay")
+        nav(class="overlay-menu")
+          ul.overlay__list
+            li.overlay__item
+               a.overlay__link(href="/avtoriz.html") Авторизация
+            li.overlay__item
+               a.overlay__link(href="/about.html") Обо мне
+            li.overlay__item
+               a.overlay__link(href="/blog.html") Блог
+            li.overlay__item
+               a.overlay__link(href="/myworks.html") Мои работы

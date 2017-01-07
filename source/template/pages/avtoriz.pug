@@ -1,0 +1,49 @@
+extends ../_template
+
+block variables
+    - var title = 'Avtoriz page'
+
+block content
+      .welcom
+        .starsbackgr
+            canvas( id="pixie")
+            .div( id="mountains")
+                .main-content
+                   .avtoriz
+                   .wrap
+                       .avtorizwindow
+                                .avtorizwindow__title Авторизуйтесь
+                                form(action="#" method="POST" class="avform")
+                                    .avtorizwindow__input
+                                        .avtorizwindow-icon
+                                            svg(role="img")
+                                                use( xlink:href="/assets/sprite/sprite.svg#login")
+                                        input(type="text" class="login" placeholder="Логин")
+                                    .avtorizwindow__input
+                                        .avtorizwindow-icon
+                                            svg(role="img")
+                                                use( xlink:href="/assets/sprite/sprite.svg#password")
+                                        input(type="text" class="login" placeholder="Пароль")
+                                    .avtorizwindow__check
+                                        input(type="checkbox" id="checkbox" class="check")
+                                        label(for="checkbox" class="label-text") Я человек
+                                    .avtorizwindow__quiestion Вы точно не робот?
+                                    .avtorizwindow__radio
+                                        .radio__block-1
+                                           input(type="radio" name="radio" class ="radio1" id="radio")
+                                           label(for="radio" class="label-text") Да
+                                        .radio__block-1
+                                           input(type="radio"  name="radio" class ="radio1" id="radio1")
+                                           label(for="radio1"  class="label-text") Не уверен
+                                ul.auth__down-list
+                                    li.auth__down-item
+                                        .auth__down-text
+                                            a.auth__down-link(href='/welcom.html') На главную
+                                    li.auth__down-item
+                                        .auth__down-text
+                                            a.auth__down-link(href="/about.html") Войти
+                .auth__footer
+                    .auth__footer-name &copy; Серова Татьяна
+                    .auth__footer-text создано в Loftschool
+                    .auth__footer-year 2016
+
